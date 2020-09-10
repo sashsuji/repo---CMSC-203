@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class SphereVolume {
+	public static void main(String[] args) {
+		double volume;
+		double diam;
+		double radius;
+		Scanner input = new Scanner(System.in);
+		System.out.println("This program calculates the volume of a sphere given the diameter.");
+		System.out.println("Diameter of sphere: ");
+		diam = input.nextDouble();
+		input.close();
+		radius = diam/2;
+		volume = (4 * Math.PI * (Math.pow(radius, 3)))/3;
+		System.out.println("Volume of sphere: " + volume);
+		input.close();
+		System.exit(0);
+	}
+
+}
